@@ -48,23 +48,25 @@ def clasificar_con_mapa(nombre_evento):
     
     # Category mapping - Order matters! More specific categories first
     categorias = {
-        'danza': ['danza', 'baile', 'ballet', 'coreografía', 'dance'],
-        'taller': ['taller', 'workshop', 'curso', 'masterclass', 'clase'],
-        'música': ['música', 'concierto', 'festival', 'banda', 'cantante', 'orquesta', 'coral', 'jazz', 'rock', 'pop', 'flamenco'],
-        'teatro': ['teatro', 'obra', 'drama', 'comedia', 'representación'],
-        'exposición': ['exposición', 'muestra', 'galería', 'arte', 'pintura', 'escultura', 'fotografía'],
         'conferencia': ['conferencia', 'charla', 'mesa redonda', 'debate', 'seminario', 'coloquio'],
+        'taller': ['taller', 'workshop', 'curso', 'masterclass', 'clase'],
+        'danza': ['danza', 'baile', 'ballet', 'coreografía', 'dance'],
         'cine': ['cine', 'película', 'film', 'documental', 'cortometraje', 'proyección'],
         'literatura': ['libro', 'lectura', 'poesía', 'escritor', 'literatura', 'novela', 'presentación de libro'],
         'infantil': ['infantil', 'niños', 'familia', 'cuentacuentos'],
+        'música': ['música', 'concierto', 'festival', 'banda', 'cantante', 'orquesta', 'coral', 'jazz', 'rock', 'pop', 'flamenco'],
+        'teatro': ['teatro', 'obra', 'drama', 'comedia', 'representación'],
+        'exposición': ['exposición', 'muestra', 'galería', 'arte', 'pintura', 'escultura', 'fotografía'],
         'otros': []
     }
     
     # Check for specific combinations first
     if 'espectáculo' in nombre_lower and 'danza' in nombre_lower:
         return 'danza'
-    if 'taller' in nombre_lower and 'pintura' in nombre_lower:
+    if 'taller' in nombre_lower and ('pintura' in nombre_lower or 'cerámica' in nombre_lower):
         return 'taller'
+    if 'conferencia' in nombre_lower:
+        return 'conferencia'
     
     for categoria, palabras_clave in categorias.items():
         for palabra in palabras_clave:
