@@ -1,0 +1,6 @@
+nombre_evento,categoria,ubicacion,enlace_evento,fecha_hora,fecha_resumen,fecha_modificado,etiquetas
+"Concierto de Jazz Contemporáneo",música,"Sala de Conciertos","https://latermicamalaga.com/evento/jazz","20:30h","15/12/2024","2024-12-10","Música"
+"Obra de Teatro: Hamlet",teatro,"Teatro Principal","https://latermicamalaga.com/evento/hamlet","21:00h","16/12/2024","2024-12-10","Teatro"
+"Exposición de Arte Moderno",exposición,"Galería de Arte","https://latermicamalaga.com/evento/arte-moderno","18:00h","17/12/2024","2024-12-10","Arte"
+"Taller de Pintura para Principiantes",taller,"Aula 1","https://latermicamalaga.com/evento/taller-pintura","10:00h","18/12/2024","2024-12-10","Talleres"
+"Conferencia sobre Sostenibilidad",conferencia,"Auditorio","https://latermicamalaga.com/evento/sostenibilidad","19:00h","19/12/2024","2024-12-10","Conferencias"
